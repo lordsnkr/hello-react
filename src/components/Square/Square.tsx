@@ -1,18 +1,15 @@
 import "./style.css";
-import React, { ReactNode } from "react";
+import React, { MouseEventHandler } from "react";
 
 interface Props {
-  children?: ReactNode;
+  onSquareClick: MouseEventHandler;
+  value: string;
 }
 
-const Square: React.FC<Props> = ({ children }) => {
-  const handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    console.log(e.target);
-  };
-
+const Square: React.FC<Props> = ({ value, onSquareClick }) => {
   return (
-    <button className="square" onClick={(e) => handleClick(e)}>
-      {children}
+    <button className="square" onClick={onSquareClick}>
+      {value}
     </button>
   );
 };
