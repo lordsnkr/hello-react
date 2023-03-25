@@ -40,8 +40,8 @@ const App = () => {
           </span>
         </div>
 
-        <div className="box-border h-24 w-24 p-4 border-4 border-red-400">
-          <p>content</p>
+        <div className="box-border h-32 w-32 p-4 border-4 border-red-400 mx-auto">
+          <p className="mx-auto">content</p>
         </div>
       </div>
     </>
