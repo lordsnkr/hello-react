@@ -1,7 +1,8 @@
 import GithubLogo from "assets/logos/github.svg";
 import GoogleLogo from "assets/logos/google.svg";
+import { FC } from "react";
 
-const Login: React.FC = () => {
+const Login: FC = () => {
   return (
     <>
       <div className="flex min-h-full flex-col justify-center py-12 sm:px-6 lg:px-8">

@@ -1,10 +1,11 @@
 import { Navigate } from "react-router-dom";
+import { FC } from "react";
 
 interface Props {
   children: JSX.Element;
 }
 
-const ProtectedRoute: React.FC<Props> = ({ children }) => {
+const ProtectedRoute: FC<Props> = ({ children }) => {
   const authenticated = localStorage.getItem("authenticated");
 
   if (!authenticated) {
