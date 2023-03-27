@@ -6,7 +6,6 @@ import { Navigate, useNavigate } from "react-router-dom";
 const Login: FC = () => {
   const navigate = useNavigate();
   const username = useRef<HTMLInputElement>(null);
-  const navigateDashboard = navigate("/");
   let authenticated = localStorage.getItem("authenticated");
   if (authenticated === "true") {
     return <Navigate replace to="/" />;
